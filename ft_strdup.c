@@ -1,0 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/10 09:07:35 by rrebois           #+#    #+#             */
+/*   Updated: 2022/11/15 13:22:39 by rrebois          ###   ########lyon.fr   */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+char	*ft_strdup(const char *s1)
+{
+	size_t	len;
+	char	*ptr;
+	size_t	i;
+
+	i = 0;
+	len = ft_strlen(s1);
+	ptr = (char *)malloc(sizeof(*ptr) * (len + 1));
+	if (ptr == NULL)
+		return (ptr);
+	while (s1[i] != '\0')
+	{
+		ptr[i] = s1[i];
+		i++;
+	}
+	ptr[i] = '\0';
+	return (ptr);
+}
+/*
+#include <stdio.h>
+#include <string.h>
+int	main()
+{
+	const char	s[]="";
+	printf("%s\n", ft_strdup(s));
+	printf("%s\n", strdup(s));
+	return (0);
+}*/
