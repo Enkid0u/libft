@@ -6,7 +6,7 @@
 #    By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 18:16:55 by rrebois           #+#    #+#              #
-#    Updated: 2022/11/18 13:37:16 by rrebois          ###   ########lyon.fr    #
+#    Updated: 2022/11/18 17:04:33 by rrebois          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ RM = rm -f
 
 FLAGS = -Wall -Wextra -Werror
 
-HEADER = libft.h
+HEADER = libft.h libft_bonus.h
 
 SRCS = ft_isalnum.c ft_memcmp.c ft_strdup.c ft_strnstr.c ft_isalpha.c ft_memcpy.c \
 	ft_strrchr.c ft_isascii.c ft_memmove.c ft_strlcat.c ft_atoi.c ft_isdigit.c \
@@ -29,7 +29,7 @@ SRCS = ft_isalnum.c ft_memcmp.c ft_strdup.c ft_strnstr.c ft_isalpha.c ft_memcpy.
 
 SRCS_BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
 	ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c \
-	ft_lstiter_bonus.c
+	ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 OBJS = $(SRCS:.c=.o)
 
