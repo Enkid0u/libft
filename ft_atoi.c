@@ -6,11 +6,19 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 08:26:11 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 17:39:37 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/18 18:35:45 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_check(int value, int sign)
+{
+	if ((value * sign) < 0)
+		return (0);
+	else
+		return (-1);
+}
 
 int	ft_atoi(const char *str)
 {
@@ -32,12 +40,7 @@ int	ft_atoi(const char *str)
 		while (str[i] >= 48 && str[i] <= 57)
 		{
 			if (value != value * 10 / 10)
-			{
-				if ((value * sign) < 0)
-					return (0);
-				else
-					return (-1);
-			}
+				return (ft_check(value, sign));
 			value = value * 10 + (str[i] - '0');
 			i++;
 		}

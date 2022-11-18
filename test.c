@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 08:26:11 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 17:56:34 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/18 18:11:51 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,15 @@ int	ft_atoi(const char *str)
 		if (str[i] == 45)
 			sign *= -1;
 		if (str[i] == 43 || str[i] == 45)
-			i--;
-		while (str[i++] >= 48 && str[i] <= 57)
+			i++;
+		while (str[i] >= 48 && str[i] <= 57)
 		{
 			if (value != value * 10 / 10 && (value * sign) < 0)
 				return (0);
 			else if (value != value * 10 / 10 && (value * sign) > 0)
 				return (-1);
 			value = value * 10 + (str[i] - '0');
+			i++;
 		}
 		return (sign * value);
 	}
