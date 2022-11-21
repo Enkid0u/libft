@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:02:33 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/17 18:41:09 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 08:33:27 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	if (dst == NULL && src == NULL)
 		return (NULL);
-	d = (unsigned char*)dst;
-	s = (unsigned char*)src;
+	d = (unsigned char *)dst;
+	s = (unsigned char *)src;
 	while (i < n)
 	{
 		d[i] = s[i];

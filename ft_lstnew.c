@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/10 08:51:46 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 15:56:53 by rrebois          ###   ########lyon.fr   */
+/*   Created: 2022/11/18 08:26:48 by rrebois           #+#    #+#             */
+/*   Updated: 2022/11/21 08:47:22 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+t_list	*ft_lstnew(void *content)
 {
-	void	*ptr;
+	t_list	*new;
 
-	if (size && count > SIZE_MAX / size)
-		return (malloc(0));
-	ptr = malloc(size * count);
-	if (ptr == NULL)
+	new = malloc(sizeof(t_list));
+	if (new == NULL)
 		return (NULL);
-	ft_bzero(ptr, count * size);
-	return (ptr);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }

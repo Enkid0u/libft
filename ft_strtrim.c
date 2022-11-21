@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 11:29:47 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 09:20:48 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 08:03:29 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 
 	i = 0;
+	if (s1 == NULL || set == NULL)
+		return (NULL);
 	start = index_front(s1, set);
 	end = index_back(s1, set, start);
-	ptr = (char *)malloc(sizeof(*ptr) * (end - start) + 1);
+	ptr = (char *)malloc(sizeof(*ptr) * ((end - start) + 1));
 	if (ptr == NULL)
 		return (NULL);
 	while (start + i < end)

@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/17 10:53:17 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/17 19:39:11 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 07:57:23 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*ptr;
 
 	i = 0;
+	if (s == NULL || f == NULL)
+		return (NULL);
 	ptr = ft_strdup(s);
 	if (ptr == NULL)
 		return (NULL);

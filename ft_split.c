@@ -6,24 +6,24 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:27:55 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 08:14:53 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 10:15:37 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*ft_copy(char const *s, size_t start, size_t end, char *ptr)
+static char	**ft_free(char **ptr, size_t j)
 {
 	size_t	x;
 
 	x = 0;
-	while (x < end - start)
+	while (x < j)
 	{
-		ptr[x] = *(char *)(s + start + x);
+		free(ptr[x]);
 		x++;
 	}
-	ptr[x] = '\0';
-	return (ptr);
+	free(ptr);
+	return (NULL);
 }
 
 static char	**ft_cut(char const *s, char c, char **ptr, size_t count)
@@ -44,17 +44,16 @@ static char	**ft_cut(char const *s, char c, char **ptr, size_t count)
 			i++;
 		if (j < count)
 		{
-			ptr[j] = (char *)malloc(sizeof(**ptr) * (i - start) + 1);
+			ptr[j] = ft_substr(s, start, i - start);
 			if (ptr[j] == NULL)
-				return (NULL);
-			ptr[j] = ft_copy(s, start, i, ptr[j]);
+				return (ft_free(ptr, j));
 			j++;
 		}
 	}
 	ptr[j] = 0;
 	return (ptr);
 }
-// si alloc d'un ptr[i] fail, penser a free la chaine et tout les j precedent A FAIRE
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -63,6 +62,8 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	count = 0;
+	if (s == NULL)
+		return (NULL);
 	while (s[i] != '\0')
 	{
 		while (s[i] == c && s[i] != '\0')
@@ -82,17 +83,11 @@ char	**ft_split(char const *s, char c)
 #include <stdio.h>
 int	main()
 {
-	char s[]="   lorem   ipsum dolor     sit amet, consectetur   \
-	adipiscing elit. Sed non risus. Suspendisse   ";
-	char c = ' ';
+	char s[]="";
+	char c = 'z';
 
 	char **ptr;
 	ptr = ft_split(s, c);
-	size_t i = 0;
-	while (i < 12)
-	{
-		printf("string[%lu]%s\n", i+1,ptr[i]);
-		i++;
-	}
+
 	return (0);
 }*/

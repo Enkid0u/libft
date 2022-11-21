@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/18 13:31:13 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 14:57:00 by rrebois          ###   ########lyon.fr   */
+/*   Created: 2022/11/18 14:58:03 by rrebois           #+#    #+#             */
+/*   Updated: 2022/11/21 15:36:56 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (lst == NULL)
-		return ;
-	while (lst->next != NULL)
+	t_list	*head;
+	t_list	*new;
+
+	if (lst == NULL || f == NULL || del == NULL)
+		return (NULL);
+	head = NULL;
+	while (lst != NULL)
 	{
-		f(lst->content);
+		new = ft_lstnew(f(lst->content));
+		if (new == NULL)
+		{
+			new = head;
+			ft_lstclear(&head, del);
+		}
+		ft_lstadd_back(&head, new);
 		lst = lst->next;
 	}
-	f(lst->content);
+	return (head);
 }

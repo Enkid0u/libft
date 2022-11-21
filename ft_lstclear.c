@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 11:52:17 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 13:30:34 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 10:29:41 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*ptr;
 	t_list	*buf;
 
-	if (*lst == NULL)
+	if (*lst == NULL || del == NULL)
 		return ;
 	ptr = *lst;
 	*lst = NULL;

@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 10:23:43 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 08:18:22 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 16:12:57 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	size;
 	size_t	i;
 
-	if (s == NULL || ptr == NULL)
+	if (s == NULL)
 		return (NULL);
 	if (len > ft_strlen(s))
 		size = ft_strlen(s);
