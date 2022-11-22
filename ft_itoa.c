@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 13:11:46 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/17 19:41:01 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:06 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,12 +71,3 @@ char	*ft_itoa(int n)
 	ptr = ft_convert(n, len, ptr);
 	return (ptr);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	int	a = 2147483647;
-
-	printf("string: %s\n", ft_itoa(a));
-	return (0);
-}*/

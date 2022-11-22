@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 11:15:09 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 08:01:54 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:14:15 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	const char	s1[]="Hello ";
-	const char	s2[]="world!";
-	printf("%s\n%s\n%s\n", s1, s2, ft_strjoin(s1, s2));
-	return (0);
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rrebois <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:58:29 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/14 09:17:28 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:14:22 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (j);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int	main ()
-{
-	char	dst[10]="";
-	char	src[]="Hello";
-
-	printf("%lu\n", ft_strlcpy(dst, src, 10));
-	printf("%lu\n", strlcpy(dst, src, 10));
-	return (0);
-}*/

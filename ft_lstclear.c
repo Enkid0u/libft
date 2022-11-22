@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 11:52:17 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 10:29:41 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 17:37:21 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*ptr;
 	t_list	*buf;
 
-	if (*lst == NULL || del == NULL)
+	if (!del || !lst)
 		return ;
 	ptr = *lst;
 	*lst = NULL;

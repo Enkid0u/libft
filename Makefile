@@ -6,7 +6,7 @@
 #    By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 18:16:55 by rrebois           #+#    #+#              #
-#    Updated: 2022/11/21 15:35:52 by rrebois          ###   ########lyon.fr    #
+#    Updated: 2022/11/22 11:56:42 by rrebois          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
 %.o: %.c $(HEADER) Makefile
-	$(CC) $(FLAGS) -c $< -o $@ -I
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJS) $(OBJS_BONUS)

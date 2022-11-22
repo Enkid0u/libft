@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 08:26:11 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/18 18:43:33 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:12:47 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,14 +48,3 @@ int	ft_atoi(const char *str)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-
-int	main(int ac, char **av)
-{
-	(void)ac;
-	printf("%d\n", ft_atoi(av[1]));
-	printf("%d\n", atoi(av[1]));
-	return (0);
-}*/

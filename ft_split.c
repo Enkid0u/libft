@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 16:27:55 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 10:15:37 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:52 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,15 +79,3 @@ char	**ft_split(char const *s, char c)
 	ptr = ft_cut(s, c, ptr, count);
 	return (ptr);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	char s[]="";
-	char c = 'z';
-
-	char **ptr;
-	ptr = ft_split(s, c);
-
-	return (0);
-}*/

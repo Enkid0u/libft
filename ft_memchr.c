@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 13:16:53 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/15 14:05:20 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:22 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main()
-{
-	const void *s = "Bonjourno";
-	//char s[] = {0, 1, 2 ,3 ,4 ,5};
-	printf("%s\n", ft_memchr(s, 'n', 2));
-	printf("%s\n", memchr(s, 'n', 2));
-	return (0);
-}*/

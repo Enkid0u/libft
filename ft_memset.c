@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rrebois <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:37:24 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/14 10:26:32 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:42 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,3 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(int ac, char **av)
-{
-	(void)ac;
-	printf("%s\n", ft_memset(av[1], 48, 6));
-	printf("%s\n", memset(av[1], 48, 6));
-	return (0);
-}*/

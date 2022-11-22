@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isascii.c                                          :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rrebois <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 14:47:32 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/10 18:25:03 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:12:57 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,3 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <ctype.h>
-#include <stdio.h>
-int	main (int ac, char **av)
-{
-	(void)ac;
-	printf("%d\n", ft_isascii(av[1][0]));
-	printf("%d\n", isascii(av[1][0]));
-	return (0);
-}*/

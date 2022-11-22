@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 11:29:47 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 08:03:29 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:14:59 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,12 +83,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-#include <stdio.h>
-int	main()
-{
-	const char	s1[]="lorem ipsum dolor sit amet";
-	const char	set[]="tel";
-	printf("%s\n", ft_strtrim(s1, set));
-	return (0);
-}*/

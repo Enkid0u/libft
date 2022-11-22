@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:43:40 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/14 13:40:59 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:14:45 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int	main()
-{
-	const char	h[]="lorem ipsum dolor sit amet";
-	const char	n[]="consectetur";
-	printf("%s\n", ft_strnstr(h, n, 30));
-	printf("%s\n", strnstr(h, n, 30));
-}*/

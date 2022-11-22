@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:46:32 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/17 18:42:08 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:37 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,17 +29,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-/* if appel other functions add static in front
-#include <string.h>
-#include <stdio.h>
-int	main()
-{
-	char	src[] = "lorem ipsum dolor sit amet";
-	char	*dst;
-
-	dst = src + 1;
-	printf("%s\n", dst);
-	printf("%s\n", ft_memmove(src, dst, 8));
-	printf("%s\n", memmove(src, dst, 8));
-}*/

@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 14:02:33 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 08:33:27 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:31 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int	main()
-{
-	char	dst[] ="";
-	char	src[]="";
-	//char	*dst2= &src[1];
-
-	printf("%s\n", ft_memcpy(dst, src, 0));
-	printf("%s\n", memcpy(dst, src, 0));
-}*/

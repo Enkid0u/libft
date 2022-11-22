@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 09:07:35 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/15 13:22:39 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:14:05 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,3 @@ char	*ft_strdup(const char *s1)
 	ptr[i] = '\0';
 	return (ptr);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main()
-{
-	const char	s[]="";
-	printf("%s\n", ft_strdup(s));
-	printf("%s\n", strdup(s));
-	return (0);
-}*/

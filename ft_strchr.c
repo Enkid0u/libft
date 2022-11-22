@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:52:35 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 11:54:12 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 12:13:58 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&ptr[i]);
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main()
-{
-	const char	s[]="teste";
-	printf("%s\n", ft_strchr(s, 't'));
-	printf("%s\n", strchr(s, 't'));
-	return (0);
-}*/
