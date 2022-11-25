@@ -6,7 +6,7 @@
 /*   By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 14:58:03 by rrebois           #+#    #+#             */
-/*   Updated: 2022/11/21 15:36:56 by rrebois          ###   ########lyon.fr   */
+/*   Updated: 2022/11/23 11:10:28 by rrebois          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new = ft_lstnew(f(lst->content));
 		if (new == NULL)
 		{
-			new = head;
 			ft_lstclear(&head, del);
+			return (NULL);
 		}
 		ft_lstadd_back(&head, new);
 		lst = lst->next;

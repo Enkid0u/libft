@@ -6,13 +6,13 @@
 #    By: rrebois <rrebois@student.42lyon.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/10 18:16:55 by rrebois           #+#    #+#              #
-#    Updated: 2022/11/22 11:56:42 by rrebois          ###   ########lyon.fr    #
+#    Updated: 2022/11/25 16:44:30 by rrebois          ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CC = gcc
+CC = cc
 
 RM = rm -f
 
