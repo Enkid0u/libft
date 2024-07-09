@@ -7,22 +7,23 @@ This project is the first project of the 42 cursus. The purpose of the project i
 # How to use it
 ### Installation
 * Clone the repo:
-$ git clone git@github.com:RRebois/libft.git
-
+```
+git clone git@github.com:RRebois/libft.git
+```
 ### compilation
 * Compile the library
 ```
-$ make
+make
 ```
 * Usage
 ```
-$ #include "libft.h"
+#include "libft.h"
 ```
 * Compile the project with the library
 ```
-$ gcc my_project.c -o my_project_name libft.a
+gcc my_project.c -o my_project_name libft.a
 ```
 *Run the project
 ```
-$ ./my_project_name
+./my_project_name
 ```
