@@ -23,7 +23,7 @@ make
 ```
 gcc my_project.c -o my_project_name libft.a
 ```
-*Run the project
+* Run the project
 ```
 ./my_project_name
 ```
